@@ -8,24 +8,63 @@
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="img/favicon.png" type="image/png">
 
-  <title>Webpack</title>
+  <title>CPS сервис</title>
 </head>
 <body>
-  <header>
-    <h1>Webpack</h1>
+  <header class="header">
+    <nav class="menu">
+      <div class="menu__buttons-container menu__buttons-container--main">
+        <button class="menu__main-menu-button menu__main-menu-button--main menu-button"></button>
+        <a href="" class="menu__main-menu-button menu__main-menu-button--home logo"><img src="img/logo.svg" alt="Логотип CPS"/></a>
+      </div>
+      <div class="menu__buttons-container menu__buttons-container--side">
+        <div class="menu__side-element menu__side-element--tablet">
+          <button class="menu__tablet-button menu__tablet-button--call menu-button"></button>
+          <button class="menu__tablet-button menu__tablet-button--chat menu-button"></button>
+          <a href="" class="menu__tablet-button menu__tablet-button--profile menu-button"></a>
+        </div>
+        <a href="" class="menu__side-element menu__side-element--repair menu-link"><span class="menu-link__txt">Оставить заявку</span></a>
+        <a href="" class="menu__side-element menu__side-element--status menu-link"><span class="menu-link__txt">Статус ремонта</span></a>
+      </div>
+    </nav>
   </header>
-
-  <main>
-    <div class="img"></div>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
+  <main class="content">
+    <article>
+      <div class="content__page-name-container page-name-container">
+        <h1 class="content__page-name">Услуги и сервисы</h1>
+      </div>
+      <nav class="content__page-content page-content">
+        <a href="#" class="page-content__element page-content__element--active">Ремонтируемые устройства</a>
+        <a href="#" class="page-content__element">Ремонтируемые бренды</a>
+        <a href="#" class="page-content__element">Дополнительные услуги</a>
+        <a href="#" class="page-content__element">Цены на услуги</a>
+        <a href="#" class="page-content__element">Специальные цены</a>
+        <a href="#" class="page-content__element">Адреса сервисных центров</a>
+        <a href="#" class="page-content__element">Отзывы</a>
+        <div class="page-content__fade"></div>
+      </nav>
+      <div class="content__columns">
+        <div class="content__left-column">
+          <div class="content__text-window">
+            <p class="content__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="content__text">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных
+              клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+              и, в свою очередь, советуют нас родным и близким.
+            </p>
+          </div>
+          <button class="content__expand expand-button">Читать далее</button>
+        </div>
+        <div class="content__right-column">
+          <div class="content__photo"></div>
+        </div>
+      </div>
+    </article>
   </main>
-
-  <footer>
-    <div class="image"></div>
-  </footer>
 </body>
 </html>
