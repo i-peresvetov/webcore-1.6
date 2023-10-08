@@ -28,56 +28,15 @@ body {
 **********HEADER***********
 **************************/
 
-.header {
-  position: fixed;
-  height: 88px;
-  background-color: white;
-  width: 100%;
-  padding: 18px 16px;
-  z-index: 1;
-  box-shadow: #d9fff5 0 1px;
-}
+@import "./header.scss";
 
-@media (min-width: 1120px) {
-  .header {
-    visibility: hidden;
-    position: absolute;
-  }
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__buttons-container {
-  display: flex;
-  align-items: center;
-}
-
-.menu__main-menu-button {
-  margin-right: 16px;
-}
-
-.menu__main-menu-button:last-child {
-  margin-right: 0;
-}
-
-@media (min-width: 768px) {
-  .menu__main-menu-button:nth-last-child(2) {
-    margin-right: 0;
-  }
-}
-
-.menu__main-menu-button--main {
-  background-image: url(img/burger.svg);
-}
+@import "./menu.scss";
 
 .logo {
   height: 50px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .menu__main-menu-button--home {
     order: 1;
   }
@@ -95,7 +54,7 @@ body {
   margin-right: 16px;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
   .menu__side-element {
     margin-right: 32px;
   }
@@ -118,7 +77,7 @@ body {
   display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1120px) {
+@media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
   .menu__side-element--tablet {
     display: flex;
     align-items: center;
@@ -126,7 +85,7 @@ body {
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
 .menu__buttons-container--side {
 visibility: visible;
 position: absolute;
@@ -136,15 +95,15 @@ right: 32px;
 }
 
 .menu__tablet-button--call {
-  background-image: url(img/call.svg);
+  background-image: url(../img/call.svg);
 }
 
 .menu__tablet-button--chat {
-  background-image: url(img/chat.svg);
+  background-image: url(../img/chat.svg);
 }
 
 .menu__tablet-button--profile {
-  background-image: url(img/profile.svg);
+  background-image: url(../img/profile.svg);
 }
 
 .menu__side-element {
@@ -153,11 +112,11 @@ right: 32px;
 }
 
 .menu__side-element--repair {
-  background-image: url(img/repair.svg);
+  background-image: url(../img/repair.svg);
 }
 
 .menu__side-element--status {
-  background-image: url(img/checkstatus.svg);
+  background-image: url(../img/checkstatus.svg);
 }
 
 .menu-link {
@@ -175,7 +134,7 @@ right: 32px;
   letter-spacing: -0.2px;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
   .menu-link__txt {
     display: inline;
     white-space: nowrap;
@@ -203,7 +162,7 @@ right: 32px;
   content: none;
 }
 
-@media (min-width: 768px) and (max-width: 1120px) {
+@media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
   .menu__buttons-container::after {
     margin: 0 20px;
   }
@@ -223,13 +182,13 @@ right: 32px;
   background-color: #f8f8f8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .content {
     padding: 112px 24px 40px;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
   .content {
     padding: 42px 34px 50px;
   }
@@ -253,14 +212,14 @@ right: 32px;
   margin-left: -20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .content__page-name-container {
     margin-bottom: 32px;
     margin-left: -28px;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
   .content__page-name-container {
     margin-bottom: 9px;
     margin-left: -38px;
@@ -271,19 +230,19 @@ right: 32px;
   content: "";
   height: 40px;
   width: 8px;
-  border-right: 4px solid #41f6d7;
+  border-right: 4px solid $border-color;
   border-radius: 4px;
   display: inline-block;
   margin-right: 12px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .page-name-container::before {
     margin-right: 24px;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
   .page-name-container::before {
     margin-right: 32px;
   }
@@ -300,14 +259,14 @@ right: 32px;
   padding-left: 16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .content__page-content {
     margin: 0 -24px 24px;
     padding-left: 24px;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
   .page-content {
     white-space: nowrap;
     flex-wrap: wrap;
@@ -352,7 +311,7 @@ right: 32px;
   margin: 0 -16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .content__columns {
     display: flex;
   }
@@ -368,7 +327,7 @@ right: 32px;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
   .content__left-column {
     padding-right: 36px;
   }
@@ -380,14 +339,14 @@ right: 32px;
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .content__text-window {
     height: 160px;
     margin-bottom: 10px;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: $desktop-breakpoint) {
   .content__text-window {
     margin-bottom: 14px;
     height: auto;
@@ -404,7 +363,7 @@ right: 32px;
   line-height: 18px; /* 128.571% */
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .content__text {
     line-height: 20px;
   }
@@ -429,7 +388,7 @@ right: 32px;
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: -0.2px;
-  background-image: url(img/expand.svg);
+  background-image: url(../img/expand.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: contain;
@@ -439,13 +398,13 @@ right: 32px;
 .content__photo {
   padding-top: 50%;
   width: 100%;
-  background-image: url(img/cps_enter_logo_768.jpg);
+  background-image: url(../img/cps_enter_logo_768.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 50%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .content__photo {
     border-radius: 6px;
   }

@@ -1,0 +1,32 @@
+.menu {    
+    display: flex;
+    justify-content: space-between;
+    
+    &__buttons-container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__main-menu-button {
+        margin-right: 16px;
+
+        &--main {
+            background-image: url(../img/burger.svg);
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }    
+}
+  
+@media (min-width: $tablet-breakpoint) {
+    .menu {
+        &__main-menu-button {
+            &:nth-last-child(2) {
+                margin-right: 0;
+            }
+        }
+    }
+
+}

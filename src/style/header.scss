@@ -1,0 +1,16 @@
+.header {
+    position: fixed;
+    height: 88px;
+    background-color: white;
+    width: 100%;
+    padding: 18px 16px;
+    z-index: 1;
+    box-shadow: #d9fff5 0 1px;
+  }
+  
+  @media (min-width: 1120px) {
+    .header {
+      visibility: hidden;
+      position: absolute;
+    }
+  }
