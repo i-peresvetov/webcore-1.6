@@ -10,6 +10,8 @@
   <title>CPS Сервис</title>
 </head>
 <body>
+
+  
   <header class="header">
     <nav class="menu">
       <div class="menu__buttons-container menu__buttons-container--main">
@@ -20,13 +22,15 @@
         <div class="menu__side-element menu__side-element--tablet">
           <button class="menu__tablet-button menu__tablet-button--call menu-button"></button>
           <button class="menu__tablet-button menu__tablet-button--chat menu-button"></button>
-          <a href="" class="menu__tablet-button menu__tablet-button--profile menu-button"></a>
+          <button class="contacts__button menu-button menu-button--profile"></button>
         </div>
         <a href="" class="menu__side-element menu__side-element--repair menu-link"><span class="menu-link__txt">Оставить заявку</span></a>
         <a href="" class="menu__side-element menu__side-element--status menu-link"><span class="menu-link__txt">Статус ремонта</span></a>
       </div>
     </nav>
   </header>
+
+
   <main class="content">
 
 
@@ -56,7 +60,7 @@
           <div class="contacts__buttons-container">
             <button class="contacts__button menu-button menu-button--call"></button>
             <button class="contacts__button menu-button menu-button--chat"></button>
-            <a href="" class="contacts__button menu-link menu-link--profile"></a>
+            <button class="contacts__button menu-button menu-button--profile"></button>            
           </div>
           <div class="contacts__text-container">
             <span class="contacts__text-container-element contacts__text-container-element--mail">mail@cps.com</span><br>
@@ -111,7 +115,78 @@
         </div>
       </div>
     </article>
+
+
+    <article class="repairing-brands">
+      <div class="h2-title">
+        <h2 class="h2-title__text">Ремонт техники различных брендов</h2>
+      </div>
+      
+      <div class="repairing-brands__brand-list brand-list swiper-container">
+        <ul class="brand-list__container brand-list-container brand-list-container--minimazed swiper-wrapper">
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/acer.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/apple.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/bosh.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/hp.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/lenovo.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/samsung.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/sony.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/viewsonic.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/acer.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/apple.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+          <li class="brand-list__swiper-slide swiper-slide"><div class="brand-list__brand-card brand-card"><img src="img/bosh.png" alt="Acer logo" class="brand-card__logo"><a href="" class="brand-card__link"></a></div></li>
+        </ul>        
+        <div class="brand-list__paginator swiper-pagination"></div>
+      </div>
+      <button class="repairing-brands__expand-button expand-button expand-button--show">Показать все</button>
+    </article>
+
+
+    <article>
+      <div class="h2-title">
+        <h2 class="h2-title__text">Ремонт различных видов техники</h2>
+      </div>
+      <ul>
+        <li>Ремонт ноутруков</li>
+        <li>Ремонт планшетов</li>
+        <li>Ремонт ПК</li>
+        <li>Ремонт мониторов</li>
+        <li>Ремонт моноблоков</li>
+        <li>Ремонт рабочих станций</li>
+        <li>Ремонт принтеров и МФУ</li>
+        <li>Ремонт смартфонов</li>
+        <li>Ремонт кофемашин</li>
+      </ul>
+      <button class="expand-button expand-button--show">Показать все</button>
+    </article>
+
+
+
+    <article>
+      <div class="h2-title">
+        <h2 class="h2-title__text">Цены на услуги</h2>
+      </div>
+
+      <table>таблица с ценами</table>
+    </article>
+
+
+
+    <article>
+      <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+      <button>Получить коммерческое предложение</button>
+    </article>
+
+
+
+
+
   </main>
-  <footer>Это футер, позже тут будет контент</footer>
+  <footer>
+    <div>© 2019 CPS<br>
+      Разработано командой Apesong </div>
+    <div>Политика конфиденциальности</div>
+    <div>Информация, размещенная на данной странице, не является публичной офертой</div>
+  </footer>
 </body>
 </html>

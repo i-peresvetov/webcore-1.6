@@ -1,5 +1,5 @@
 .left-menu {
-  // display: none;
+  display: none;
   background-color: #fff;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
@@ -31,6 +31,10 @@
     padding: 23px 24px;
     margin-bottom: 23px;
     flex-shrink: 0;
+  }
+
+  &__footer {
+    margin-top: auto;
   }
 }
 

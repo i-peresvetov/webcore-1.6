@@ -14,4 +14,17 @@
   background-color: transparent;
   background-size: contain;
   border: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+  }
+
+  &--show {
+    background-image: url(../img/expand.svg);
+  }
+
+  &--hide {
+    background-image: url(../img/hide.svg);
+    margin-bottom: 14px;
+  }
 }

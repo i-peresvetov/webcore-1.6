@@ -1,13 +1,13 @@
 .content {
-  padding: 112px 16px 0;
+  padding-top: 112px;
   background-color: #f8f8f8;
 
   @media (min-width: $tablet-breakpoint) {
-    padding: 112px 24px 40px;
+    padding-top: 112px;
   }
 
   @media (min-width: $desktop-breakpoint) {
-    padding: 42px 34px 50px;
+    padding-top: 42px;
   }
 
   &__page-name-container {

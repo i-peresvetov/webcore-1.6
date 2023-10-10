@@ -30,121 +30,60 @@ body {
   font-family: "TTLakes", Arial, sans-serif;
 }
 
+/*ОБЩИЕ*/
+@import 'h2-title';
+@import "menu-button";
+@import "menu-link";
+@import "logo";
 
-@import 'header';
+
+/*ШАПКА*/
+@import "header";
 @import "menu";
-@import 'logo';
-@import 'menu-button';
-@import 'menu-link';
-@import 'content';
-@import 'page-name-container';
-@import 'page-content';
-@import 'expand-button';
+
+/*БОКОВОЕ МЕНЮ*/
+@import './left-menu/left-menu.scss';
+@import "./left-menu/left-menu-header";
+@import "./left-menu/left-menu-content";
+@import "./left-menu/left-menu-footer";
+@import "./left-menu/contacts";
+@import "./left-menu/language";
+
+/*СТРАНИЦА*/
+@import "content";
+@import "page-name-container";
+@import "page-content";
+@import "expand-button";
+
+/*БРЕНДЫ+СВАЙПЕР*/
+@import "repairing-brands";
+@import "brand-list";
+@import "brand-list-container";
+@import "brand-card";
 
 
-@import 'left-menu';
-@import 'left-menu-header';
-@import 'left-menu-content';
 
 
 
+@import 'css_swiper.min';
 
+/******************************************/
+/******************************************/
+/******************************************/
 
+.swiper-slide {
+  width: 240px;
+}
 
+@media (min-width: 768px) {
+  .swiper-slide {
+    width: auto;
+  }
+}
 
-
-
-
-
-// .left-menu-footer {
-//   padding: 32px 24px;
-//   flex-shrink: 0;
-// }
-
-// .left-menu__footer {
-//   margin-top: auto;
-// }
-
-// .contacts__buttons-container {
-//   display: flex;
-//   margin-bottom: 16px;
-// }
-
-// .contacts__button {
-//   margin-right: 16px;
-// }
-
-// .contacts__button:last-child {
-//   margin-right: 16px;
-// }
-
-// .menu-button--call {
-//   background-image: url(../img/call.svg);
-// }
-
-// .menu-button--chat {
-//   background-image: url(../img/chat.svg);
-// }
-
-// .menu-link--profile {
-//   background-image: url(../img/profile.svg);
-// }
-
-// // .menu-link {
-// //   height: 40px;
-// //   width: 40px;
-// //   border-radius: 50%;
-// //   transition: all 200ms;
-// // }
-
-// // .menu-link:hover {
-// //   transform: scale(1.1);
-// //   box-shadow: 0 0 10px black;
-// // }
-
-// .contacts__text-container {
-//   margin-bottom: 40px;
-// }
-
-// .contacts__text-container-element {
-//   margin-bottom: 12px;
-// }
-
-// .contacts__text-container-element:last-child {
-//   margin-bottom: 0px;
-// }
-
-// .contacts__text-container-element--tel {
-//   color: #1b1c21;
-//   font-size: 24px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 32px; /* 133.333% */
-//   letter-spacing: -0.6px;
-// }
-
-// .language {
-//   display: flex;
-// }
-
-// .language__var {
-//   margin-right: 7px;
-//   border: none;
-//   background-color: transparent;
-//   outline: transparent solid 2px;
-//   outline-offset: 2px;
-//   border-radius: 1px;
-//   transition: 500ms;
-// }
-
-// .language__var:hover {
-//   outline-color: #41f6d7;
-// }
-
-// .language__var:last-child {
-//   margin-right: 0px;
-// }
-
-// .language__var--active {
-//   color: #7e7e82;
-// }
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  background-color: #b5b6bc;
+}

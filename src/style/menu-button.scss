@@ -14,6 +14,18 @@
     background-image: url(../img/search.svg);
   }
 
+  &--call {
+    background-image: url(../img/call.svg);
+  }
+
+  &--chat {
+    background-image: url(../img/chat.svg);
+  }
+
+  &--profile {
+    background-image: url(../img/profile.svg);
+  }
+
   &:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px black;

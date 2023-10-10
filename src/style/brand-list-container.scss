@@ -1,0 +1,26 @@
+.brand-list-container {
+  @media (min-width: $tablet-breakpoint) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 24px 24px 0px 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 24px 32px 0px 32px;
+  }
+
+  &--minimazed {
+    @media (min-width: $tablet-breakpoint) {
+      height: 185px;
+    }
+  }
+
+  &--expanded {
+    @media (min-width: $tablet-breakpoint) {
+      height: auto;
+    }
+  }
+}

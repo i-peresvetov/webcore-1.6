@@ -1,0 +1,12 @@
+.repairing-brands {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+
+  &__expand-button {
+    margin: 24px 24px 34px 24px;
+
+    @media (min-width: $desktop-breakpoint) {
+      margin: 24px 32px 34px 32px;
+    }
+  }
+}

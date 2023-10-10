@@ -1,0 +1,50 @@
+.brand-list {
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 81px;
+    left: 0;
+    top: 12px;
+    z-index: 100;
+    background: linear-gradient(
+      270deg,
+      rgba(248, 248, 248, 0) 0%,
+      #f8f8f8 83.16%
+    );
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 81px;
+    right: 0;
+    top: 12px;
+    z-index: 100;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0) 100%
+    );
+  }
+
+  &__brand-card {
+    margin: 16px auto 12px auto;
+
+    @media (min-width: $tablet-breakpoint) {
+      margin: 0;
+    }
+  }
+
+  &__paginator {
+    position: static;
+    margin-bottom: 33px;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
+}
