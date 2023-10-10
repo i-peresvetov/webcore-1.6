@@ -1,0 +1,36 @@
+.left-menu {
+  // display: none;
+  background-color: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  height: 100%;
+  width: 320px;
+  position: fixed;
+  left: 0px;
+  top: 0;
+
+  &__main {
+    width: 320px;
+    height: 100%;
+    max-height: 1024px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    color: #1b1c21;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    z-index: 100;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 23px 24px;
+    margin-bottom: 23px;
+    flex-shrink: 0;
+  }
+}
+

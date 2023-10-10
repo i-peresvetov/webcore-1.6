@@ -1,0 +1,28 @@
+.page-name-container {
+  color: #1b1c21;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 142.857% */
+  letter-spacing: -0.6px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    height: 40px;
+    width: 8px;
+    border-right: 4px solid $border-color;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 12px;
+
+    @media (min-width: $tablet-breakpoint) {
+      margin-right: 24px;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+      margin-right: 32px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.menu-button {
+  border: 0;
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all 200ms;
+
+  &--close {
+    background-image: url(../img/close.svg);
+  }
+
+  &--search {
+    background-image: url(../img/search.svg);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px black;
+  }
+}
