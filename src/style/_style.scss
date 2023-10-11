@@ -29,12 +29,16 @@ ul {
 body {
   font-family: "TTLakes", Arial, sans-serif;
 }
+/*SWIPER*/
+@import 'css_swiper.min';
+@import './swiper/swiper.scss';
 
 /*ОБЩИЕ*/
 @import 'h2-title';
 @import "menu-button";
 @import "menu-link";
 @import "logo";
+@import 'link-arrow';
 
 
 /*ШАПКА*/
@@ -57,33 +61,6 @@ body {
 
 /*БРЕНДЫ+СВАЙПЕР*/
 @import "repairing-brands";
-@import "brand-list";
-@import "brand-list-container";
-@import "brand-card";
 
-
-
-
-
-@import 'css_swiper.min';
-
-/******************************************/
-/******************************************/
-/******************************************/
-
-.swiper-slide {
-  width: 240px;
-}
-
-@media (min-width: 768px) {
-  .swiper-slide {
-    width: auto;
-  }
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  line-height: 12px;
-  background-color: #b5b6bc;
-}
+/*ДЕВАЙСЫ*/
+@import 'repairing-devices';

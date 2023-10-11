@@ -1,5 +1,5 @@
 let expandButton = document.querySelector(".expand-button");
-let brandContainer = document.querySelector(".brand-list-container");
+let brandContainer = document.querySelector(".repairing-brands__list");
 
 expandButton.addEventListener("click", function () {
   if (expandButton.textContent == "Показать все") {
@@ -7,14 +7,14 @@ expandButton.addEventListener("click", function () {
     expandButton.classList.add("expand-button--hide");
     expandButton.textContent = "Скрыть";
 
-    brandContainer.classList.remove("brand-list-container--minimazed");
-    brandContainer.classList.add("brand-list-container--expanded");
+    brandContainer.classList.remove("repairing-brands__list--minimazed");
+    brandContainer.classList.add("repairing-brands__list--expanded");
   } else {
     expandButton.classList.remove("expand-button--hide");
     expandButton.classList.add("expand-button--show");
     expandButton.textContent = "Показать все";
 
-    brandContainer.classList.remove("brand-list-container--expanded");
-    brandContainer.classList.add("brand-list-container--minimazed");
+    brandContainer.classList.remove("repairing-brands__list--expanded");
+    brandContainer.classList.add("repairing-brands__list--minimazed");
   }
 });
