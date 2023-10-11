@@ -30,7 +30,7 @@ body {
   font-family: "TTLakes", Arial, sans-serif;
 }
 /*SWIPER*/
-@import 'css_swiper.min';
+@import './swiper/css_swiper.min';
 @import './swiper/swiper.scss';
 
 /*ОБЩИЕ*/
@@ -59,8 +59,5 @@ body {
 @import "page-content";
 @import "expand-button";
 
-/*БРЕНДЫ+СВАЙПЕР*/
-@import "repairing-brands";
-
-/*ДЕВАЙСЫ*/
-@import 'repairing-devices';
+/*РЕМОНТЫ+СВАЙПЕРЫ*/
+@import 'repairing';

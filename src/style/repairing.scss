@@ -1,17 +1,17 @@
-.repairing-brands {
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #f8f8f8;
-
+.repairing {
   &__container {
-    &::before {
+    &::before,
+    &::after {
       content: "";
       display: inline-block;
       position: absolute;
       width: 24px;
-      height: 81px;
-      left: 0;
       top: 12px;
       z-index: 100;
+    }
+
+    &::before {
+      left: 0;
       background: linear-gradient(
         270deg,
         rgba(248, 248, 248, 0) 0%,
@@ -20,19 +20,26 @@
     }
 
     &::after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      width: 24px;
-      height: 81px;
       right: 0;
-      top: 12px;
-      z-index: 100;
       background: linear-gradient(
         270deg,
         #f8f8f8 16.84%,
         rgba(248, 248, 248, 0) 100%
       );
+    }
+
+    &--brands {
+      &::before,
+      &::after {
+        height: 81px;
+      }
+    }
+
+    &--devices {
+      &::before,
+      &::after {
+        height: 170px;
+      }
     }
   }
 
@@ -40,7 +47,7 @@
     @media (min-width: $tablet-breakpoint) {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
+      gap: 16px 24px;
       padding: 24px 24px 0px 24px;
       overflow: hidden;
       box-sizing: border-box;
@@ -71,21 +78,28 @@
     }
   }
 
-  &__brand-card {
+  &__link {
     margin: 16px auto 12px auto;
-    min-height: 72px;
     border: 1px solid #eaeaea;
     border-radius: 6px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #fff;
-    padding: 0 16px;
+    box-sizing: border-box;
+
+    &--brands {
+      min-height: 72px;
+      padding: 0 16px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--devices {
+      min-height: 160px;
+      padding: 16px;
+    }
 
     @media (min-width: $tablet-breakpoint) {
       margin: 0;
-      width: 100%;
-      box-sizing: border-box;
     }
   }
 
@@ -94,15 +108,6 @@
 
     @media (min-width: $desktop-breakpoint) {
       margin: 24px 32px 34px 32px;
-    }
-  }
-
-  &__paginator {
-    position: static;
-    margin-bottom: 33px;
-
-    @media (min-width: $tablet-breakpoint) {
-      display: none;
     }
   }
 }

@@ -4,3 +4,12 @@
   line-height: 12px;
   background-color: #b5b6bc;
 }
+
+.swiper-pagination {
+  position: static;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
