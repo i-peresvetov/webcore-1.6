@@ -1,6 +1,6 @@
 .content {
   padding-top: 112px;
-  background-color: #f8f8f8;
+  background-color: $main-background;
 
   @media (min-width: $tablet-breakpoint) {
     padding-top: 112px;
