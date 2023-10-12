@@ -3,4 +3,8 @@
   height: 40px;
   width: 40px;
   background: url(../img/go.svg) no-repeat 50% 50%;
+  
+  &--devices {
+    align-self: flex-end;
+  }
 }
