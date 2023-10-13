@@ -39,7 +39,7 @@ body {
 @import "menu-link";
 @import "logo";
 @import 'link-arrow';
-
+@import 'order-btn';
 
 /*ШАПКА*/
 @import "header";
@@ -62,5 +62,6 @@ body {
 /*РЕМОНТЫ+СВАЙПЕРЫ*/
 @import 'repairing';
 @import 'repairing-prices';
+@import 'prices-table';
 
 @import 'footer';

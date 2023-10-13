@@ -92,6 +92,14 @@
     @media (min-width: $tablet-breakpoint) {
       width: auto;
     }
+
+    &:first-of-type {
+      margin-left: 16px;
+    }
+
+    &:last-of-type {
+      margin-right: 16px;
+    }
   }
 
   &__link {
@@ -111,7 +119,7 @@
 
     &--devices {
       min-height: 160px;
-      padding: 22px 16px 16px;      
+      padding: 22px 16px 16px;
       justify-content: space-between;
     }
 
@@ -137,4 +145,10 @@
   &__nds-text {
     padding: 16px;
   }
+
+  &__get-offer {
+    margin-left: 16px;
+    margin-bottom: 40px;
+  }
+  
 }

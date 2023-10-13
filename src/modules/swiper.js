@@ -15,7 +15,7 @@
         loop: false,
         // slidesPerView: 1.5,
         slidesPerView: "auto",
-        centeredSlides: true,
+        centeredSlides: false,
         // a11y: true,
         keyboardControl: true,
         grabCursor: true,

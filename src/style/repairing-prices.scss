@@ -20,6 +20,10 @@
     line-height: 18px; /* 128.571% */
     letter-spacing: 0.2px;
     margin-bottom: 16px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   &__order {
