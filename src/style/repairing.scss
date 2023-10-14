@@ -66,7 +66,7 @@
 
     &--minimazed {
       @media (min-width: $tablet-breakpoint) {
-        height: 185px;
+        height: 186px;
       }
     }
 
@@ -95,10 +95,16 @@
 
     &:first-of-type {
       margin-left: 16px;
+      @media (min-width: $tablet-breakpoint) {
+        margin-left: 0;
+      }
     }
 
     &:last-of-type {
       margin-right: 16px;
+      @media (min-width: $tablet-breakpoint) {
+        margin-right: 0;
+      }
     }
   }
 
@@ -135,7 +141,12 @@
   }
 
   &__expand-button {
+    display: none;
     margin: 24px 24px 32px 24px;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: inline;
+    }
 
     @media (min-width: $desktop-breakpoint) {
       margin: 24px 32px 34px 32px;
@@ -150,5 +161,4 @@
     margin-left: 16px;
     margin-bottom: 40px;
   }
-  
 }

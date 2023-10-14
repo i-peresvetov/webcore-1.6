@@ -1,5 +1,9 @@
 .left-menu-content {
-  padding: 0 9px 0 9px;
+  padding: 0 9px 0 1px;
+
+  @media (min-width: 320px) {
+    padding: 0 9px 0 9px;
+  }
 
   &__li {
     margin-bottom: 24px;
@@ -30,12 +34,15 @@
       &::before {
         content: "";
         position: absolute;
-        left: -13px;
+        left: -5px;
         top: 0px;
         height: 32px;
         width: 8px;
         border-right: 4px solid #41f6d7;
         border-radius: 4px;
+        @media (min-width: 320px) {
+          left: -13px;
+        }
       }
     }
   }

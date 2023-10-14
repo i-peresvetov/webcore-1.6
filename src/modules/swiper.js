@@ -27,3 +27,28 @@
     breakpoint.addListener(breakpointChecker);
     breakpointChecker();
   })();
+
+// let mySwiper;
+// const breakpoint = window.matchMedia( '(min-width:768px)' );
+// const breakpointChecker = function() {
+//   if ( breakpoint.matches === true ) {
+//      if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+//      return;
+//   } else if ( breakpoint.matches === false ) {
+//      return enableSwiper();
+//   }
+// };
+// const enableSwiper = function() {
+//   mySwiper = new Swiper('.swiper-container', {
+//         loop: false,
+//         slidesPerView: "auto",
+//         centeredSlides: false,
+//         keyboardControl: true,
+//         grabCursor: true,
+//         pagination: ".swiper-pagination",
+//         paginationClickable: true,
+//         spaceBetween: 16,
+//     });
+// };
+// breakpoint.addListener(breakpointChecker);
+// breakpointChecker();

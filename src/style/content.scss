@@ -64,15 +64,13 @@
   }
 
   &__text-window {
-    margin-bottom: 16px;
-    height: 90px;
+    margin-bottom: 16px;    
     overflow: hidden;
     padding: 0 16px;
 
     @media (min-width: $tablet-breakpoint) {
       padding-left: 24px;
       padding-right: 0;
-      height: 160px;
       margin-bottom: 10px;
     }
 
@@ -80,6 +78,22 @@
       padding-left: 34px;
       height: auto;
       margin-bottom: 14px;
+    }
+
+    &--minimazed {
+      height: 90px;
+
+      @media (min-width: $tablet-breakpoint) {
+        height: 160px;
+      }
+
+      @media (min-width: $desktop-breakpoint) {
+        height: 270px;
+      }
+    }
+
+    &--expanded {
+      height: auto;
     }
   }
 
@@ -101,8 +115,28 @@
     }
   }
 
-  &__expand {
+  &__expand {    
     margin-bottom: 16px;
+    margin-left: 24px;
+    @media (min-width: $desktop-breakpoint) {
+      margin-left: 32px;
+    }
+
+    &--show {
+      background-image: url(../img/expand.svg);
+
+      &::after {
+        content: 'Читать далее';
+      }
+    }
+
+    &--hide {
+      background-image: url(../img/hide.svg);
+
+      &::after {
+        content: 'Скрыть';
+      }
+    }
   }
 
   &__photo {

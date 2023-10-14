@@ -1,5 +1,4 @@
-.expand-button {
-  display: none;
+.expand-button {  
   align-items: center;
   padding-left: 32px;
   height: 24px;
@@ -9,7 +8,6 @@
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: -0.2px;
-  background-image: url(../img/expand.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: contain;
@@ -21,10 +19,15 @@
 
   &--show {
     background-image: url(../img/expand.svg);
+    &::after {
+      content: 'Показать все';
+    }
   }
 
-  &--hide {
+  &--hide {    
     background-image: url(../img/hide.svg);
-    margin-bottom: 14px;
+    &::after {
+      content: 'Скрыть';
+    }
   }
 }
