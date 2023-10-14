@@ -8,7 +8,7 @@
     box-shadow: $border-color 0 1px;
   }
   
-  @media (min-width: 1120px) {
+  @media (min-width: $desktop-breakpoint) {
     .header {
       visibility: hidden;
       position: absolute;

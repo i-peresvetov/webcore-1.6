@@ -10,10 +10,35 @@
   font-weight: 500;
   line-height: 16px; /* 114.286% */
   padding: 0 19px 19px;
-   
+  
+  @media (min-width: $tablet-breakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 30px 24px 25px;
+  } 
+  
 
   &__element {
     text-align: center;
     margin-top: 16px;
+
+    @media (min-width: $tablet-breakpoint) {
+      width: 30%;
+      margin-top: 0;
+    }
+
+    &:first-child {
+      @media (min-width: $tablet-breakpoint) {
+        text-align: left;
+      } 
+    }
+
+    &:last-child {
+      @media (min-width: $tablet-breakpoint) {
+        text-align: right;
+      } 
+    }
+
   }
 }

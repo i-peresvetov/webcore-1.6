@@ -5,5 +5,8 @@
   
   &__close {
     margin-right: 16px;
+    @media (min-width: $desktop-breakpoint) {
+      display: none;
+    }
   }
 }

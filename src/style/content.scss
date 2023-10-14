@@ -10,6 +10,12 @@
     padding-top: 42px;
   }
 
+  &__part {
+    @media (min-width: $desktop-breakpoint) {
+      padding-left: 306px;
+    }
+  }
+
   &__page-name-container {
     margin-bottom: 24px;
     margin-left: -4px;
@@ -35,7 +41,7 @@
     }
 
     @media (min-width: $desktop-breakpoint) {
-      padding-left: 0;
+      padding-left: 34px;
     }
   }
 

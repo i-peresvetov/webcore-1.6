@@ -12,6 +12,10 @@
   border: none;
   background-color: transparent;
 
+  @media (min-width: $tablet-breakpoint) {
+    width: 421px;
+  }
+
   &__arrow {
     width: 24px;
     height: 27.4px;
