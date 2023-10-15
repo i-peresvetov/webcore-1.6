@@ -1,6 +1,9 @@
-.menu {
+.menu {  
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;  
+  max-width: 1440px;
+  position: relative;
 
   &__buttons-container {
     display: flex;
@@ -23,8 +26,8 @@
       @media (min-width: $desktop-breakpoint) {
         visibility: visible;
         position: absolute;
-        top: 42px;
         right: 32px;
+        top: 24px;
       }
 
       &::after {

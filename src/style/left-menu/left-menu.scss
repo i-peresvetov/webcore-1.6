@@ -3,9 +3,17 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  left: 0px;
+  left: 0;
   top: 0;
   z-index: 300;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: block;
+    width: 320px;    
+    position: sticky;
+    flex-shrink: 0;
+    height: 100vh;
+  }
 
   &__shadow {
     background-color: #fff;
@@ -19,9 +27,7 @@
 
     @media (min-width: $desktop-breakpoint) {
       box-shadow: none;
-      width: 306px;
-    }
-       
+    }       
   }
 
   &--hide {
@@ -30,11 +36,6 @@
 
   &--show {
     display: block;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    display: block;
-    background: transparent;
   }
 
   &__main {

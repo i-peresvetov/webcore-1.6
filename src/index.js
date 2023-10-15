@@ -4,4 +4,5 @@ import './index.scss';
 import './modules/expand-btn';
 import './modules/js_swiper.min';
 import './modules/swiper';
-import './modules/left-menu'
+import './modules/left-menu';
+import './modules/modal';
