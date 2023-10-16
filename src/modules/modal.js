@@ -1,26 +1,31 @@
-const feedbackBtn = document.querySelector(".menu-button--chat");
-const feedbackBtnClose = document.querySelector(".modal-feedback__close");
 const modalFeedback = document.querySelector(".modal-feedback");
-
-feedbackBtn.addEventListener("click", function () {
-  modalFeedback.classList.toggle("modal--show");
-  modalFeedback.classList.toggle("modal--hide");
+const feedbackBtns = document.querySelectorAll(".menu-button--chat");
+feedbackBtns.forEach(function (element) {
+  element.addEventListener(`click`, function () {
+    modalFeedback.classList.replace("modal--hide", "modal--show");
+  });
 });
+const feedbackBtnClose = document.querySelector(".modal-feedback__close");
 feedbackBtnClose.addEventListener("click", function () {
-  modalFeedback.classList.toggle("modal--show");
-  modalFeedback.classList.toggle("modal--hide");
+  modalFeedback.classList.replace("modal--show", "modal--hide");
+});
+const modalFeedbackClose = document.querySelector(".modal-feedback__fog");
+modalFeedbackClose.addEventListener("click", function () {
+  modalFeedback.classList.replace("modal--show", "modal--hide");
 });
 
-
-const callBtn = document.querySelector(".menu-button--call");
-const callBtnClose = document.querySelector(".modal-call__close");
 const modalCall = document.querySelector(".modal-call");
-
-callBtn.addEventListener("click", function () {
-  modalCall.classList.toggle("modal--show");
-  modalCall.classList.toggle("modal--hide");
+const callBtns = document.querySelectorAll(".menu-button--call");
+callBtns.forEach(function (element) {
+  element.addEventListener("click", function () {
+    modalCall.classList.replace("modal--hide", "modal--show");
+  });
 });
+const callBtnClose = document.querySelector(".modal-call__close");
 callBtnClose.addEventListener("click", function () {
-  modalCall.classList.toggle("modal--show");
-  modalCall.classList.toggle("modal--hide");
+  modalCall.classList.replace("modal--show", "modal--hide");
+});
+const modalCallClose = document.querySelector(".modal-call__fog");
+modalCallClose.addEventListener("click", function () {
+  modalCall.classList.replace("modal--show", "modal--hide");
 });

@@ -1,7 +1,7 @@
 .left-menu-content {
   padding: 0 9px 0 1px;
 
-  @media (min-width: 320px) {
+  @media (min-width: 360px) {
     padding: 0 9px 0 9px;
   }
 
@@ -40,7 +40,7 @@
         width: 8px;
         border-right: 4px solid #41f6d7;
         border-radius: 4px;
-        @media (min-width: 320px) {
+        @media (min-width: 360px) {
           left: -13px;
         }
       }

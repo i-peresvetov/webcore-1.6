@@ -176,22 +176,22 @@
     letter-spacing: 0.2px;
   }
 
-  &__order {
-    box-sizing: border-box;
-    display: inline-block;
-    color: #fff;
-    background: url(../img/order.svg) #ff3e79 no-repeat 95%;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px; /* 200% */
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    width: 119px;
-    height: 32px;
-    border-radius: 16px;
-    padding-left: 12px;
-  }
+  // &__order {
+  //   box-sizing: border-box;
+  //   display: inline-block;
+  //   color: #fff;
+  //   background: url(../img/order.svg) #ff3e79 no-repeat 95%;
+  //   font-size: 12px;
+  //   font-style: normal;
+  //   font-weight: 700;
+  //   line-height: 32px; /* 200% */
+  //   letter-spacing: -0.15px;
+  //   text-transform: uppercase;
+  //   width: 119px;
+  //   height: 32px;
+  //   border-radius: 16px;
+  //   padding-left: 12px;
+  // }
 
   &__pagination {
     margin-bottom: 0px;
@@ -231,5 +231,9 @@
       margin-left: 32px;
       margin-bottom: 50px;
     }
+  }
+
+  &__order {
+    line-height: 32px;    
   }
 }

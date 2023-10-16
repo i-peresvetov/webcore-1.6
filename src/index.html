@@ -22,8 +22,8 @@
 
       <div class="menu__buttons-container menu__buttons-container--side">
         <div class="menu__side-element menu__side-element--tablet">
-          <button class="menu__tablet-button menu__tablet-button--call menu-button"></button>
-          <button class="menu__tablet-button menu__tablet-button--chat menu-button"></button>
+          <button class="menu__tablet-button menu-button menu-button--call"></button>
+          <button class="menu__tablet-button menu-button menu-button--chat"></button>
           <button class="contacts__button menu-button menu-button--profile"></button>
         </div>
         <a href="" class="menu__side-element menu__side-element--repair menu-link"><span class="menu-link__txt">Оставить заявку</span></a>
@@ -75,7 +75,8 @@
               </div>        
             </footer>
           </div>
-        </div>      
+        </div>  
+        <div class="left-menu__fog"></div>
       </aside>
 
       <div class="content__main">
@@ -222,7 +223,7 @@
                   <span class="prices-table__text">30 мин</span>
                 </p>
                 <p class="prices-table__cell">
-                  <a class="prices-table__order">Заказать</a>
+                  <a class="prices-table__order submit-btn">Заказать</a>
                 </p>            
               </li>
     
@@ -240,7 +241,7 @@
                   <span class="prices-table__text">30-120 мин</span>
                 </p>
                 <p class="prices-table__cell">
-                  <a class="prices-table__order">Заказать</a>
+                  <a class="prices-table__order submit-btn">Заказать</a>
                 </p>            
               </li>
     
@@ -258,7 +259,7 @@
                   <span class="prices-table__text">30-120 мин</span>
                 </p>
                 <p class="prices-table__cell">
-                  <a class="prices-table__order">Заказать</a>
+                  <a class="prices-table__order submit-btn">Заказать</a>
                 </p>            
               </li>
     
@@ -276,7 +277,7 @@
                   <span class="prices-table__text">30-120 мин</span>
                 </p>
                 <p class="prices-table__cell">
-                  <a class="prices-table__order">Заказать</a>
+                  <a class="prices-table__order submit-btn">Заказать</a>
                 </p>            
               </li>
     
@@ -294,7 +295,7 @@
                   <span class="prices-table__text">30-120 мин</span>
                 </p>
                 <p class="prices-table__cell">
-                  <a class="prices-table__order">Заказать</a>
+                  <a class="prices-table__order submit-btn">Заказать</a>
                 </p>            
               </li>
     
@@ -317,11 +318,36 @@
     </div>
 
     <aside class="modal modal--hide modal-call">
-      <button class="menu-button menu-button--close modal-call__close"></button>      
+      <div class="modal__fog modal-call__fog"></div>
+      <div class="modal__window">
+        <button class="modal__close menu-button menu-button--close modal-call__close"></button>
+        <div class="modal__name-container">
+          <h3 class="modal__name">Обратная связь</h2>
+        </div>        
+        <form action="">
+          <input type="text" name="name" required placeholder='Имя' class="modal__input"><br>
+          <input type="tel" name="tel" required placeholder='Телефон' class="modal__input"><br>
+          <input type="email" name="email" required placeholder='Электронная почта' class="modal__input"><br>
+          <textarea placeholder='Сообщение' rows="4" class="modal__input"></textarea><br>
+          <p class="modal__personal">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p>
+          <div class="modal__submit"><input type="submit" value="Отправить" class="submit-btn modal__submit-btn"></div>
+        </form>
+      </div>         
     </aside>
 
     <aside class="modal modal--hide modal-feedback">
-      <button class="menu-button menu-button--close modal-feedback__close"></button>      
+      <div class="modal__fog modal-feedback__fog"></div>
+      <div class="modal__window">
+        <button class="modal__close menu-button menu-button--close modal-feedback__close"></button>
+        <div class="modal__name-container">
+          <h3 class="modal__name">Заказать звонок</h2>
+        </div>              
+        <form action="">
+          <input type="tel" name="tel" required placeholder='Телефон' class="modal__input"><br>
+          <p class="modal__personal">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p>
+          <div class="modal__submit"><input type="submit" value="Отправить" class="submit-btn modal__submit-btn"></div>
+        </form>
+      </div>      
     </aside>
 
   </main>
