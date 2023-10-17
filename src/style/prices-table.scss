@@ -1,5 +1,6 @@
 .prices-table {
   &__container {
+    margin-top: 16px;
     @media (min-width: $tablet-breakpoint) {
       margin: 0 24px;
       padding: 0 16px;
@@ -57,17 +58,17 @@
 
   &__head-table {
     display: none;
-    width: 100%;    
+    width: 100%;
 
     @media (min-width: $tablet-breakpoint) {
-      display: table;      
-      margin: 0 24px;
-      padding: 0 16px;
+      display: table;
+      // margin: 0 24px;
+      padding: 0 16px + 24px;
     }
 
     @media (min-width: $desktop-breakpoint) {
-      margin: 0 32px;
-      padding: 0 24px;
+      // margin: 0 32px;
+      padding: 0 24px + 32px;
     }
   }
 
@@ -87,21 +88,53 @@
     }
 
     &:nth-child(2) {
-      width: 13%;      
+      width: 13%;
     }
 
     &:nth-child(3) {
-      width: 14%;      
+      width: 14%;
     }
 
     &:nth-child(4) {
-      width: 20%;      
+      width: 20%;
     }
 
     @media (min-width: $tablet-breakpoint) {
-      display: table-column;      
+      display: table-column;
     }
   }
+
+  // &__col1 {
+  //   display: none;
+  //   width: 53%;
+  //   @media (min-width: $tablet-breakpoint) {
+  //     display: table-column;
+  //   }
+  // }
+
+  // &__col2 {
+  //   display: none;
+  //   width: 13%;
+  //   @media (min-width: $tablet-breakpoint) {
+  //     display: table-column;
+  //   }
+  // }
+
+  // &__col3 {
+  //   display: none;
+  //   width: 14%;
+  //   @media (min-width: $tablet-breakpoint) {
+  //     display: table-column;
+  //   }
+  // }
+
+  // &__col4 {
+  //   display: none;
+  //   width: 20%;
+  //   @media (min-width: $tablet-breakpoint) {
+  //     display: table-column;
+  //   }
+  // }
 
   &__row {
     width: 260px;
@@ -127,6 +160,8 @@
     }
 
     @media (max-width: $tablet-breakpoint) {
+      padding: 0 16px;
+
       border: 1px solid #eaeaea;
       border-radius: 6px;
       background-color: #fff;
@@ -139,8 +174,16 @@
     }
   }
 
+  &__headcell {
+    // border: 1px solid black;          /**********ТЕСТОВОЕ ЗНАЧЕНИЕ**********/
+    @media (min-width: $tablet-breakpoint) {
+      display: table-cell;
+      padding: 31px 0 16px;
+    }
+  }
+
   &__cell {
-    border: 1px solid black;          /**********ТЕСТОВОЕ ЗНАЧЕНИЕ**********/
+    // border: 1px solid black;          /**********ТЕСТОВОЕ ЗНАЧЕНИЕ**********/
     @media (min-width: $tablet-breakpoint) {
       display: table-cell;
       border-bottom: #eaeaea 1px solid;
@@ -155,12 +198,15 @@
   }
 
   &__text-title {
+    margin-top: 16px;
+    margin-bottom: 4px;
+
+    display: block;
     color: $title-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 16px; /* 114.286% */
-    margin-bottom: 4px;
 
     @media (min-width: $tablet-breakpoint) {
       display: none;
@@ -168,32 +214,33 @@
   }
 
   &__text {
+    display: block;
     color: $main-text-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px; /* 128.571% */
     letter-spacing: 0.2px;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: inline;
+      
+    }
   }
 
-  // &__order {
-  //   box-sizing: border-box;
-  //   display: inline-block;
-  //   color: #fff;
-  //   background: url(../img/order.svg) #ff3e79 no-repeat 95%;
-  //   font-size: 12px;
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   line-height: 32px; /* 200% */
-  //   letter-spacing: -0.15px;
-  //   text-transform: uppercase;
-  //   width: 119px;
-  //   height: 32px;
-  //   border-radius: 16px;
-  //   padding-left: 12px;
-  // }
+  &__order {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    line-height: 32px;
+
+    @media (min-width: $tablet-breakpoint) {
+      position: static;
+    }
+  }
 
   &__pagination {
+    margin-top: 12px;
     margin-bottom: 0px;
   }
 
@@ -231,9 +278,5 @@
       margin-left: 32px;
       margin-bottom: 50px;
     }
-  }
-
-  &__order {
-    line-height: 32px;    
   }
 }
