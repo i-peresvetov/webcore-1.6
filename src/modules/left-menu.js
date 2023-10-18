@@ -1,7 +1,7 @@
-const leftMenu = document.querySelector('.left-menu--hide');
+const leftMenu = document.querySelector('.left-menu');
 const leftMenuClose = document.querySelector('.left-menu__fog');
 const leftMenuOpenBtn = document.querySelector('.menu__main-menu-button--main');
-const leftMenuCloseBtn = document.querySelector('.menu-button--close');
+const leftMenuCloseBtn = document.querySelector('.left-menu__close');
 
 leftMenuOpenBtn.addEventListener('click', function () {
     leftMenu.classList.replace('left-menu--hide', 'left-menu--show');

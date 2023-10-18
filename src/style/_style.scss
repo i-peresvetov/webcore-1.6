@@ -29,9 +29,11 @@ ul {
 body {
   font-family: "TTLakes", Arial, sans-serif;
 }
+
+
 /*SWIPER*/
 @import './swiper/css_swiper.min';
-@import './swiper/swiper.scss';
+@import './swiper/swiper';
 
 /*ОБЩИЕ*/
 @import 'h2-title';
@@ -48,12 +50,9 @@ body {
 @import "menu";
 
 /*БОКОВОЕ МЕНЮ*/
-@import './left-menu/left-menu.scss';
-@import "./left-menu/left-menu-header";
-@import "./left-menu/left-menu-content";
-@import "./left-menu/left-menu-footer";
-@import "./left-menu/contacts";
-@import "./left-menu/language";
+@import 'left-menu';
+@import "contacts";
+@import "language";
 
 /*СТРАНИЦА*/
 @import "content";
